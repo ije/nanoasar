@@ -1,0 +1,16 @@
+{
+  "name": "nanoasar",
+  "type": "module",
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "scripts": {
+    "prepublish": "bun build.ts && bun test",
+    "build": "bun build.ts",
+    "test": "bun build.ts && bun test"
+  },
+  "version": "4.0.1",
+  "devDependencies": {
+    "@electron/asar": "4.0.1",
+    "esbuild": "^0.27.3"
+  }
+}
