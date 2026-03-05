@@ -1,6 +1,6 @@
 {
   "name": "nanoasar",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "type": "module",
   "main": "asar.mjs",
   "module": "asar.mjs",
