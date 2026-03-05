@@ -4,8 +4,10 @@
   "type": "module",
   "main": "asar.mjs",
   "module": "asar.mjs",
+  "types": "types/asar.d.ts",
   "files": [
-    "asar.mjs"
+    "asar.mjs",
+    "types/"
   ],
   "scripts": {
     "prepublish": "bun build.ts && bun test",
@@ -14,6 +16,6 @@
   },
   "devDependencies": {
     "@electron/asar": "4.0.1",
-    "esbuild": "^0.27.3"
+    "esbuild": "0.27.3"
   }
 }

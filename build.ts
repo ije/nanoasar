@@ -1,5 +1,8 @@
 import { build, stop } from "esbuild";
 
+await Bun.$`rm -rf types && mkdir -p types`;
+await Bun.$`cp node_modules/@electron/asar/lib/*.d.ts types`;
+
 await build({
   entryPoints: ["index.ts"],
   outfile: "asar.mjs",
